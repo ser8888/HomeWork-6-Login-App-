@@ -9,11 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
-    
-    
     
     var user = "Alex"
     var password = "123"
@@ -23,8 +20,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
      
     }
-
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let mainVC = segue.destination as? MainViewController else { return }
+        mainVC.username = user
+        
+    }
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        userNameTextField.text = ""
+        passwordTextField.text = ""
+    }
+
     @IBAction func forgotUserNameButtonTapped() {
         showAlertUserNameForgotten()
     }
@@ -32,8 +38,6 @@ class ViewController: UIViewController {
     @IBAction func forgotPasswordButtonTapped() {
         showAlertPasswordForgotten()
     }
-    
-
     
     @IBAction func logInButtonTapped(_ sender: Any) {
         if userNameTextField.text == user && passwordTextField.text == password { print("Access granted !")

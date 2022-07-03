@@ -34,6 +34,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="logInButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I4n-BQ-e7v"/>
+                                    <segue destination="UW7-rd-8PB" kind="presentation" id="duJ-3T-uRV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTw-tz-Hxn">
@@ -82,10 +83,77 @@
             </objects>
             <point key="canvasLocation" x="-23.188405797101453" y="67.633928571428569"/>
         </scene>
+        <!--Main View Controller-->
+        <scene sceneID="MQ8-pj-2zb">
+            <objects>
+                <viewController id="UW7-rd-8PB" customClass="MainViewController" customModule="HomeWork_6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HnY-PO-kT3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDR-ek-HYw">
+                                <rect key="frame" x="66" y="124" width="283" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;\u{1f44d}&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fy5-M8-vIE">
+                                <rect key="frame" x="140" y="283" width="134" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEK-Tm-aYo">
+                                <rect key="frame" x="143" y="541" width="131" height="51"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log Out">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="logOutButtonTapped" destination="UW7-rd-8PB" eventType="touchUpInside" id="Spv-G0-Owf"/>
+                                    <segue destination="Qfd-qT-hRg" kind="unwind" unwindAction="unwindFor:" id="fbT-vi-8NZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="75J-Cx-lej"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fy5-M8-vIE" firstAttribute="top" secondItem="mDR-ek-HYw" secondAttribute="bottom" constant="126" id="GPZ-gl-Tgd"/>
+                            <constraint firstItem="mDR-ek-HYw" firstAttribute="leading" secondItem="75J-Cx-lej" secondAttribute="leading" constant="66" id="NHk-bf-BAR"/>
+                            <constraint firstItem="75J-Cx-lej" firstAttribute="trailing" secondItem="mDR-ek-HYw" secondAttribute="trailing" constant="65" id="NOH-w9-6Yy"/>
+                            <constraint firstItem="75J-Cx-lej" firstAttribute="bottom" secondItem="uEK-Tm-aYo" secondAttribute="bottom" constant="250" id="QTh-Xz-LpE"/>
+                            <constraint firstItem="75J-Cx-lej" firstAttribute="trailing" secondItem="uEK-Tm-aYo" secondAttribute="trailing" constant="140" id="Rno-vt-dUN"/>
+                            <constraint firstItem="uEK-Tm-aYo" firstAttribute="top" secondItem="fy5-M8-vIE" secondAttribute="bottom" constant="186" id="YpC-59-Tb8"/>
+                            <constraint firstItem="uEK-Tm-aYo" firstAttribute="leading" secondItem="75J-Cx-lej" secondAttribute="leading" constant="143" id="caE-3s-OyC"/>
+                            <constraint firstItem="fy5-M8-vIE" firstAttribute="leading" secondItem="75J-Cx-lej" secondAttribute="leading" constant="140" id="nhw-Id-qFN"/>
+                            <constraint firstItem="mDR-ek-HYw" firstAttribute="top" secondItem="75J-Cx-lej" secondAttribute="top" constant="80" id="q7P-nS-69L"/>
+                            <constraint firstItem="75J-Cx-lej" firstAttribute="trailing" secondItem="fy5-M8-vIE" secondAttribute="trailing" constant="140" id="t0U-vA-8ym"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="L0a-Ai-oCj"/>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="mDR-ek-HYw" id="Ta9-KL-khm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Gk-N6-VrG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Qfd-qT-hRg" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="695.6521739130435" y="67.633928571428569"/>
+        </scene>
     </scenes>
     <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

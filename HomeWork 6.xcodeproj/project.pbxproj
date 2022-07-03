@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F28BEB62871A4A900686268 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F28BEB52871A4A900686268 /* MainViewController.swift */; };
 		7FCDF6CA28717285006D703F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCDF6C928717285006D703F /* AppDelegate.swift */; };
 		7FCDF6CC28717285006D703F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCDF6CB28717285006D703F /* SceneDelegate.swift */; };
 		7FCDF6CE28717285006D703F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCDF6CD28717285006D703F /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F28BEB52871A4A900686268 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7FCDF6C628717285006D703F /* HomeWork 6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HomeWork 6.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FCDF6C928717285006D703F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FCDF6CB28717285006D703F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				7FCDF6C928717285006D703F /* AppDelegate.swift */,
 				7FCDF6CB28717285006D703F /* SceneDelegate.swift */,
 				7FCDF6CD28717285006D703F /* ViewController.swift */,
+				7F28BEB52871A4A900686268 /* MainViewController.swift */,
 				7FCDF6CF28717285006D703F /* Main.storyboard */,
 				7FCDF6D22871728D006D703F /* Assets.xcassets */,
 				7FCDF6D42871728D006D703F /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				7FCDF6CE28717285006D703F /* ViewController.swift in Sources */,
 				7FCDF6CA28717285006D703F /* AppDelegate.swift in Sources */,
 				7FCDF6CC28717285006D703F /* SceneDelegate.swift in Sources */,
+				7F28BEB62871A4A900686268 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
