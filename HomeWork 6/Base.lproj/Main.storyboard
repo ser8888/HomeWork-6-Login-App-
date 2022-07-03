@@ -61,7 +61,6 @@
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TzE-zg-RzO" secondAttribute="trailing" constant="16" id="1pR-gM-aAJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ivl-fp-GTT" secondAttribute="trailing" constant="162" id="2DT-Jb-OsG"/>
                             <constraint firstItem="plt-Ej-ALW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="4Yk-ZY-Ft1"/>
                             <constraint firstItem="TzE-zg-RzO" firstAttribute="top" secondItem="bWE-go-N5p" secondAttribute="bottom" constant="115" id="6n5-bC-5ee"/>
                             <constraint firstItem="bWE-go-N5p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="9sT-8W-qap"/>
@@ -72,8 +71,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bWE-go-N5p" secondAttribute="trailing" constant="94" id="UeZ-Yq-cqY"/>
                             <constraint firstItem="iTw-tz-Hxn" firstAttribute="top" secondItem="ivl-fp-GTT" secondAttribute="bottom" constant="50" id="ddW-xT-Dvc"/>
                             <constraint firstItem="iTw-tz-Hxn" firstAttribute="top" secondItem="bWE-go-N5p" secondAttribute="bottom" constant="115" id="gXc-kK-Fxp"/>
+                            <constraint firstItem="TzE-zg-RzO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iTw-tz-Hxn" secondAttribute="trailing" constant="8" symbolic="YES" id="iQn-21-E0K"/>
                             <constraint firstItem="iTw-tz-Hxn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oQW-CU-AlI"/>
-                            <constraint firstItem="ivl-fp-GTT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tAl-Ae-6TX"/>
                             <constraint firstItem="ivl-fp-GTT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="162" id="tSw-63-CfT"/>
                         </constraints>
                     </view>
