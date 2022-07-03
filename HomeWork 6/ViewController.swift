@@ -21,16 +21,19 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+     
     }
 
-    @IBAction func showAlertUserNameForgotten() {
-        
+    
+    @IBAction func forgotUserNameButtonTapped() {
+        showAlertUserNameForgotten()
     }
     
-    @IBAction func showAlertPasswordForgotten() {
-        
+    @IBAction func forgotPasswordButtonTapped() {
+        showAlertPasswordForgotten()
     }
+    
+
     
     @IBAction func logInButtonTapped(_ sender: Any) {
         if userNameTextField.text == user && passwordTextField.text == password { print("Access granted !")
@@ -54,6 +57,37 @@ class ViewController: UIViewController {
         passwordTextField.text = ""
     }
     
+    private func showAlertUserNameForgotten() {
+        let alert = UIAlertController(
+            title: "Oops!",
+            message: "Your name is \(user)",
+            preferredStyle: .alert
+        )
+        let action = UIAlertAction(
+            title: "OK",
+            style: .default,
+            handler: nil
+        )
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    private func showAlertPasswordForgotten() {
+        let alert = UIAlertController(
+            title: "Oops",
+            message: "Your password is \(password)",
+            preferredStyle: .alert
+        )
+        let action = UIAlertAction(
+            title: "OK",
+            style: .default,
+            handler: nil
+        )
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil
+        )
+        
+    }
 
 }
 
