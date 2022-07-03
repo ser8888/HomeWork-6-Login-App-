@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
@@ -18,11 +18,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     
+        view.endEditing(true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let mainVC = segue.destination as? MainViewController else { return }
+        guard let mainVC = segue.destination as? WelcomeViewController else { return }
         mainVC.username = user
         
     }
@@ -90,7 +90,13 @@ class ViewController: UIViewController {
         alert.addAction(action)
         present(alert, animated: true, completion: nil
         )
-        
+    }
+    
+    internal override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first as? UITouch {
+            view.endEditing(true)
+        }
+        super.touchesBegan(touches, with: event)
     }
 
 }
