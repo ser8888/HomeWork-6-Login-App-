@@ -105,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7FCDF6C128717285006D703F /* Build configuration list for PBXProject "HomeWork 6" */;
+			buildConfigurationList = 7FCDF6C128717285006D703F /* Build configuration list for PBXProject "HomeWork 6&7" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -343,7 +343,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7FCDF6C128717285006D703F /* Build configuration list for PBXProject "HomeWork 6" */ = {
+		7FCDF6C128717285006D703F /* Build configuration list for PBXProject "HomeWork 6&7" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7FCDF6D82871728D006D703F /* Debug */,

@@ -12,92 +12,51 @@ class LoginViewController: UIViewController {
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    var user = "Alex"
-    var password = "123"
-
+    private let user = "Alex"
+    private let password = "123"
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let mainVC = segue.destination as? WelcomeViewController else { return }
-        mainVC.username = user
-        
+        guard let WelcomeVC = segue.destination as? WelcomeViewController else { return }
+        WelcomeVC.username = user
     }
+    
     @IBAction func unwind(for segue: UIStoryboardSegue) {
         userNameTextField.text = ""
         passwordTextField.text = ""
     }
-
-    @IBAction func forgotUserNameButtonTapped() {
-        showAlertUserNameForgotten()
-    }
     
-    @IBAction func forgotPasswordButtonTapped() {
-        showAlertPasswordForgotten()
+    @IBAction func forgottenRegisterData(_ sender: UIButton) {
+        sender.tag == 0
+        ? showAlert(title: "Oops!", message: "Your name is \(user)")
+        : showAlert(title: "Oops!", message: "Your password is \(password)")
     }
     
     @IBAction func logInButtonTapped(_ sender: Any) {
-        if userNameTextField.text == user && passwordTextField.text == password { /*print("Access granted")*/
-        } else { showAlertLoginFailure() }
-    }
-  
-    private func showAlertLoginFailure() {
-        let alert = UIAlertController(
-            title: "Invalid login or password",
-            message: "Please, enter correct login and password",
-            preferredStyle: .alert
-        )
-        let action = UIAlertAction(
-            title: "OK",
-            style: .default,
-            handler: nil
-        )
-        alert.addAction(action)
-        present(alert, animated: true, completion: nil
-        )
-        passwordTextField.text = ""
-    }
-    
-    private func showAlertUserNameForgotten() {
-        let alert = UIAlertController(
-            title: "Oops!",
-            message: "Your name is \(user)",
-            preferredStyle: .alert
-        )
-        let action = UIAlertAction(
-            title: "OK",
-            style: .default,
-            handler: nil
-        )
-        alert.addAction(action)
-        present(alert, animated: true, completion: nil)
-    }
-    
-    private func showAlertPasswordForgotten() {
-        let alert = UIAlertController(
-            title: "Oops",
-            message: "Your password is \(password)",
-            preferredStyle: .alert
-        )
-        let action = UIAlertAction(
-            title: "OK",
-            style: .default,
-            handler: nil
-        )
-        alert.addAction(action)
-        present(alert, animated: true, completion: nil
-        )
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if touches.first != nil {
-            view.endEditing(true)
+        guard userNameTextField.text == user, passwordTextField.text == password else {
+            showAlert(
+                title: "Invalid login or password",
+                message: "Please, eneter correct login and password",
+                textField: passwordTextField
+            )
+            return
         }
-        super.touchesBegan(touches, with: event)
+        performSegue(withIdentifier: "showWelcomeVC", sender: nil)
     }
-
+    
+    private func showAlert(title: String, message: String, textField: UITextField? = nil) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in textField?.text = ""
+        }
+        alert.addAction(okAction)
+        present(alert, animated: true)
+        
+    }
 }
+
+
 
