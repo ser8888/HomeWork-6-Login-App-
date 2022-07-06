@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7F28BEB62871A4A900686268 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F28BEB52871A4A900686268 /* WelcomeViewController.swift */; };
+		7F81F66D287604C3002E08DB /* Personality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F81F66C287604C3002E08DB /* Personality.swift */; };
 		7FCDF6CA28717285006D703F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCDF6C928717285006D703F /* AppDelegate.swift */; };
 		7FCDF6CC28717285006D703F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCDF6CB28717285006D703F /* SceneDelegate.swift */; };
 		7FCDF6CE28717285006D703F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCDF6CD28717285006D703F /* LoginViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		7F28BEB52871A4A900686268 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		7F81F66C287604C3002E08DB /* Personality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personality.swift; sourceTree = "<group>"; };
 		7FCDF6C628717285006D703F /* HomeWork 6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HomeWork 6.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FCDF6C928717285006D703F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FCDF6CB28717285006D703F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F140B9728762B0200495262 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				7FCDF6D22871728D006D703F /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		7F140B9828762C5700495262 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7F81F66C287604C3002E08DB /* Personality.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7FC3D3AF2876017A00411B2B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7FC3D3B0287601A200411B2B /* Storyboards */,
+				7FCDF6CD28717285006D703F /* LoginViewController.swift */,
+				7F28BEB52871A4A900686268 /* WelcomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7FC3D3B0287601A200411B2B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7FCDF6D42871728D006D703F /* LaunchScreen.storyboard */,
+				7FCDF6CF28717285006D703F /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7FC3D3B1287601F100411B2B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				7FCDF6D72871728D006D703F /* Info.plist */,
+				7FCDF6CB28717285006D703F /* SceneDelegate.swift */,
+				7FCDF6C928717285006D703F /* AppDelegate.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		7FCDF6BD28717285006D703F = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +105,10 @@
 		7FCDF6C828717285006D703F /* HomeWork 6 */ = {
 			isa = PBXGroup;
 			children = (
-				7FCDF6C928717285006D703F /* AppDelegate.swift */,
-				7FCDF6CB28717285006D703F /* SceneDelegate.swift */,
-				7FCDF6CD28717285006D703F /* LoginViewController.swift */,
-				7F28BEB52871A4A900686268 /* WelcomeViewController.swift */,
-				7FCDF6CF28717285006D703F /* Main.storyboard */,
-				7FCDF6D22871728D006D703F /* Assets.xcassets */,
-				7FCDF6D42871728D006D703F /* LaunchScreen.storyboard */,
-				7FCDF6D72871728D006D703F /* Info.plist */,
+				7F140B9828762C5700495262 /* Models */,
+				7FC3D3AF2876017A00411B2B /* ViewControllers */,
+				7F140B9728762B0200495262 /* Resourses */,
+				7FC3D3B1287601F100411B2B /* Config */,
 			);
 			path = "HomeWork 6";
 			sourceTree = "<group>";
@@ -105,7 +148,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7FCDF6C128717285006D703F /* Build configuration list for PBXProject "HomeWork 6&7" */;
+			buildConfigurationList = 7FCDF6C128717285006D703F /* Build configuration list for PBXProject "HomeWork 6" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -142,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FCDF6CE28717285006D703F /* LoginViewController.swift in Sources */,
+				7F81F66D287604C3002E08DB /* Personality.swift in Sources */,
 				7FCDF6CA28717285006D703F /* AppDelegate.swift in Sources */,
 				7FCDF6CC28717285006D703F /* SceneDelegate.swift in Sources */,
 				7F28BEB62871A4A900686268 /* WelcomeViewController.swift in Sources */,
@@ -293,7 +337,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CC2755AXU3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "HomeWork 6/Info.plist";
+				INFOPLIST_FILE = "HomeWork 6/Config/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -343,7 +387,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7FCDF6C128717285006D703F /* Build configuration list for PBXProject "HomeWork 6&7" */ = {
+		7FCDF6C128717285006D703F /* Build configuration list for PBXProject "HomeWork 6" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7FCDF6D82871728D006D703F /* Debug */,
