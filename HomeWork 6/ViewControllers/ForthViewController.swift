@@ -21,7 +21,7 @@ class ForthViewController: UIViewController {
 
 override func viewDidLoad() {
     super.viewDidLoad()
-    photoImage.image = UIImage(named: user.person.photo)
+//    photoImage.image = UIImage(named: user.person.photo)
 }
 
 }

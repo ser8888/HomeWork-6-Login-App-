@@ -42,8 +42,8 @@ class LoginViewController: UIViewController {
                 forthVC.view.backgroundColor = .systemMint
                 }
             }
+    }
         
-        }
 //        guard let WelcomeVC = segue.destination as? WelcomeViewController else { return }
 //        WelcomeVC.username = user
     

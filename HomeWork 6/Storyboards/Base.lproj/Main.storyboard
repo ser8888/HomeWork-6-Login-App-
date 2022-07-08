@@ -305,20 +305,11 @@
                     <view key="view" contentMode="scaleToFill" id="xBo-ND-KL0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cgH-4o-o4I">
-                                <rect key="frame" x="40" y="46" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="pKJ-hT-XEh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="3" image="3.circle.fill" catalog="system" id="qeW-8m-AO8"/>
                     <navigationItem key="navigationItem" id="Ac5-ks-wm1"/>
-                    <connections>
-                        <outlet property="photoImageN" destination="cgH-4o-o4I" id="0Wm-ya-7nO"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q5g-EO-TMn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -340,10 +331,6 @@
                                     <segue destination="BGg-ew-Xqp" kind="show" id="lMO-b0-z37"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MIt-0Z-HaQ">
-                                <rect key="frame" x="48" y="67" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="e6A-of-iLr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -353,9 +340,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZIR-wA-I6q"/>
-                    <connections>
-                        <outlet property="photoImage" destination="MIt-0Z-HaQ" id="aly-Fo-f1r"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hih-aO-uMw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

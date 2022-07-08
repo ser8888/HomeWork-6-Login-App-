@@ -28,14 +28,14 @@ class SecondPageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(" второй \(user.person.fullName)")
+        print(" второй ")
  //       photoImage.image = UIImage(named: user.person.photo)
  //       title = user.person.fullName
 //        fullnameLable.text = user.person.job.jobTitle.rawValue
-        familyStatusLabel.text = user.person.familyStatus.rawValue
-        childrenLable.text = String(user.person.children)
-        hobbyLabel.text = user.person.sport
-        homeAnimalsLabel.text = user.person.homeAnimals.rawValue
+//        familyStatusLabel.text = user.person.familyStatus.rawValue
+//        childrenLable.text = String(user.person.children)
+//        hobbyLabel.text = user.person.sport
+//        homeAnimalsLabel.text = user.person.homeAnimals.rawValue
         
         
 
